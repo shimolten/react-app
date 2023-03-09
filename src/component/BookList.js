@@ -5,10 +5,6 @@ import Noimage from '../images/noImage.png';
 
 const BookList = ({books}) =>{
 
-    if(books ==null){
-        console.log("bookありません");
-    }
-
     return(
         <section className="book_section">
         <div className="book_list">

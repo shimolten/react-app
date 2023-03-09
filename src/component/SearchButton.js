@@ -29,7 +29,7 @@ useEffect(() => {
       const result = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchTerm}`+'&maxResults=10');
       setBooks(result.data.items);
     } catch(eve) {
-      console.log("エラー発生");
+      console.log("検索結果取得できませんでした");
     }
   };
 
