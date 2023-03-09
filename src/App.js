@@ -42,41 +42,6 @@ function App() {
     <div className="container">
       <Header/>
       <SerchButoon/>
-      {/*
-      <section className="book_search">
-        <input type="text" className="searchInput" name="searchInput" value={searchTerm} onChange={handleChange} placeholder="書籍名を入力"/>
-        <button type="submit" className="btn_search" onClick={handleSubmit}>Search</button>
-      </section>
-      */}
-       {/*
-      <section className="book_section">
-        <div className="book_list">
-          {books.map((book)=>{
-          let thamnails = "";
-          if(book.volumeInfo.imageLinks === undefined){
-            console.log("イメージリンクがありません");
-            //画像がない場合はNoimage画像を表示
-            thamnails = Noimage;
-
-          }else{
-            thamnails =  book.volumeInfo.imageLinks.thumbnail;
-          }
-          return(
-            <div className="items" key={book.id}>
-              <a className="booklink" href={book.volumeInfo.canonicalVolumeLink} target="_blank">
-              <div className="image_area"　>
-                <img src={thamnails} alt="書籍画像" />
-              </div>
-              </a>
-              <p>{book.volumeInfo.title}</p>
-              <p>著者： {book.volumeInfo.authors}</p>
-            </div>
-          )
-        })
-        }
-        </div>
-      </section>
-      */}
     </div>
      </>
   );
